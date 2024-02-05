@@ -32,14 +32,14 @@ public class Assignment3 {
 
                     for (i = 0; i < userdata.length - 1; i++)
 
-                    {   if (saver[0].equalsIgnoreCase(data[0]) && saver[1].equalsIgnoreCase(data[1])) {
+                    {   if (saver[0].equalsIgnoreCase(data[0]) && saver[1].equals(data[1])) {
                         System.out.println("Welcome  ");
                         userFound = false;
                         break; }
                     }
                 }
                 numberofTries++;
-                if(numberofTries==5)    {System.out.println("Too many failed attempts, you are now locked out");}
+                if(numberofTries==5 && userFound)    {System.out.println("Too many failed attempts, you are now locked out");}
             }
             finally {reader.close();}
         }
