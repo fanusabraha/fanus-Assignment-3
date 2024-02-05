@@ -33,7 +33,7 @@ public class Assignment3 {
                     for (i = 0; i < userdata.length - 1; i++)
 
                     {   if (saver[0].equalsIgnoreCase(data[0]) && saver[1].equals(data[1])) {
-                        System.out.println("Welcome  ");
+                        System.out.println("Welcome  "+data[2]);
                         userFound = false;
                         break; }
                     }
